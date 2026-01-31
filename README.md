@@ -317,9 +317,9 @@ Give a  if this project helped you!
 - [Releases](https://github.com/yourusername/simple-calculator/releases)
 ```
 
-## **2. Additional Helper Files**
+## 2. Additional Helper Files
 
-**`run.py`** (Optional runner):
+`run.py`(Optional runner):
 ```python
 #!/usr/bin/env python3
 """
@@ -333,7 +333,7 @@ if __name__ == "__main__":
     run_calculator()
 ```
 
-**`examples/usage-example.py`**:
+`examples/usage-example.py
 ```python
 #!/usr/bin/env python3
 """
@@ -389,9 +389,9 @@ if __name__ == "__main__":
     quick_calculate()
 ```
 
-## **3. Enhanced calculator.py with Better Features**
+## 3. Enhanced calculator.py with Better Features**
 
-**Updated `calculator.py`**:
+Updated `calculator.py`:
 ```python
 #!/usr/bin/env python3
 """
@@ -472,7 +472,7 @@ def get_valid_number(prompt: str) -> float:
                 return math.e
             return float(value)
         except ValueError:
-            print("❌ Invalid input! Please enter a valid number.")
+            print(" Invalid input! Please enter a valid number.")
         except KeyboardInterrupt:
             print("\n\nOperation cancelled.")
             raise
@@ -482,15 +482,15 @@ def display_menu() -> None:
     print("\n" + "="*50)
     print("🧮 SIMPLE CALCULATOR MENU")
     print("="*50)
-    print("1. ➕ Addition")
-    print("2. ➖ Subtraction")
-    print("3. ✖️  Multiplication")
-    print("4. ➗ Division")
-    print("5. 📜 Show History")
-    print("6. 🧹 Clear History")
-    print("7. 🚪 Exit")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Show History")
+    print("6.  Clear History")
+    print("7.  Exit")
     print("="*50)
-    print("💡 Tip: You can enter 'pi' or 'e' as numbers!")
+    print(" Tip: You can enter 'pi' or 'e' as numbers!")
 
 def perform_operation(choice: int, num1: float, num2: float, calc_instance=None) -> str:
     """
@@ -513,9 +513,9 @@ def perform_operation(choice: int, num1: float, num2: float, calc_instance=None)
         result = operation(num1, num2)
         return f"{emoji} {num1} {symbol} {num2} = {result}"
     except ValueError as e:
-        return f"❌ Error: {e}"
+        return f" Error: {e}"
     except Exception as e:
-        return f"⚠️  Unexpected error: {e}"
+        return f"  Unexpected error: {e}"
 
 def run_calculator() -> None:
     """Main function to run the calculator application."""
@@ -536,23 +536,23 @@ def run_calculator() -> None:
             choice_input = input("\nSelect operation (1-7): ").strip()
             
             if not choice_input.isdigit():
-                print("❌ Please enter a number!")
+                print(" Please enter a number!")
                 continue
             
             choice = int(choice_input)
             
             if choice == 7:
-                print("\n👋 Thank you for using the calculator. Goodbye!")
+                print("\nThank you for using the calculator. Goodbye!")
                 break
             elif choice == 5:
                 calculator.show_history()
                 continue
             elif choice == 6:
                 calculator.history.clear()
-                print("✅ History cleared!")
+                print(" History cleared!")
                 continue
             elif choice not in range(1, 5):
-                print("❌ Invalid choice! Please select 1-7.")
+                print(" Invalid choice! Please select 1-7.")
                 continue
             
             print("\nEnter two numbers:")
@@ -574,28 +574,28 @@ def run_calculator() -> None:
                     result = calculator.divide(num1, num2)
                     symbol = "/"
                 except ValueError as e:
-                    print(f"❌ {e}")
+                    print(f" {e}")
                     continue
             
-            print(f"\n✅ {num1} {symbol} {num2} = {result}")
+            print(f"\n {num1} {symbol} {num2} = {result}")
             
         except ValueError as e:
-            print(f"❌ Error: {e}")
+            print(f" Error: {e}")
         except KeyboardInterrupt:
-            print("\n\n🛑 Calculator stopped by user. Goodbye!")
+            print("\n\n Calculator stopped by user. Goodbye!")
             break
         except Exception as e:
-            print(f"⚠️  An unexpected error occurred: {e}")
+            print(f" An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
     run_calculator()
 ```
 
-## **4. How to Create the GitHub Repository**
+## 4. How to Create the GitHub Repository
 
-### **Step-by-Step GitHub Setup:**
+### Step-by-Step GitHub Setup:
 
-1. **Create repository on GitHub:**
+1. Create repository on GitHub:**
    - Go to [github.com](https://github.com)
    - Click "New repository"
    - Name: `simple-calculator`
@@ -603,7 +603,7 @@ if __name__ == "__main__":
    - Choose Public
    - Don't initialize with README (we'll add ours)
 
-2. **Initialize locally and push:**
+2. Initialize locally and push:
 ```bash
 # Create directory
 mkdir simple-calculator
@@ -638,7 +638,11 @@ git push -u origin main
 ```
 
 ### screenshot
-Create a simple terminal screenshot showing the calculator in action and save it as `examples/screenshot.png`.
+
+
+
+
+
 
 
 
