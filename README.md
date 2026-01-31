@@ -23,7 +23,8 @@ markdown
 
 A Python command-line calculator with input validation, error handling, and beautiful ASCII interface.
 
-![Calculator Demo](examples/screenshot.png)
+![Calculator Demo] 
+
 
 ## ✨ Features
 
